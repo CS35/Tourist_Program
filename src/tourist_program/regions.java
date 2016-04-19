@@ -6,32 +6,40 @@ import java.util.Scanner;
 public class regions
 {
   // could make cities and contries into a list
-  public String regions()
+  public void regions()
   {
+
     String input_country;
     String input_city;
     Scanner input = new Scanner(System.in);
-    String country[] = new String[3];
-    country[0]="China";
-    country[1]="United Kingdom";
-    country[2]="Turkey";
-    for (String x : country)
-    {
-      System.out.println(x);
-    }
-    System.out.print("Choose a country:");
+    String country[] = {"France","United Kingdom","Turkey"};
+    String France[] = {"Paris","Nice","Lyon","Marseille"};
+    String United_Kingdom[] = {"London","Edinburgh","Birmingham","Liverpool"};
+    String Turkey[]={"Istanbul","Antalya","Izmir","Konya"};
+
+    System.out.println("here is the list of countries for you to Choose from ...");
+    Display(country);
+    System.out.print("Choose a country: ");
     input_country = input.nextLine();
-    if (input_country.equalsIgnoreCase("China"))
+    System.out.println("here is the list of cities for you to Choose from ...");
+
+    if (input_country.equalsIgnoreCase("France"))
      {
-       return input_country;
+       Display(France);
+       System.out.print("Choose a city: ");
+       input_city = input.nextLine();
      }
-     if (input_country.equalsIgnoreCase("United Kingdom"))
+     else if (input_country.equalsIgnoreCase("United Kingdom"))
      {
-       return input_country;
+       Display(United_Kingdom);
+       System.out.print("Choose a city: ");
+       input_city = input.nextLine();
      }
-     else
+     else if (input_country.equalsIgnoreCase("Turkey"))
      {
-       return input_country;
+       Display(Turkey);
+       System.out.print("Choose a city: ");
+       input_city = input.nextLine();
      }
 
   }
@@ -39,8 +47,7 @@ public class regions
 {
   for (String x : array )
    {
-
-  }
-
+    System.out.println(x);
+   }
 }
 }

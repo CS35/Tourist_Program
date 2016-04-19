@@ -7,8 +7,8 @@ public class Tourist_Program
 
     public static void main(String[] args)
     {
-
-
+      regions region = new regions();
+      region.regions();
     }
 
 }
