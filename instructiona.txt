@@ -1,0 +1,20 @@
+main only call methods
+-
+Cars print 2D array and store the value in varible and send it to print
+-
+Hotels same as cars
+-
+regions 
+print (lists???) contries and cities and store them in varibles and send them to print
+(nested if)
+a method to print both arrays values
+all arrays at the top
+in the if statment we ask the user to choose a city then call the method with the  array to display it
+inner if statments we have a reurn value that return both the country and the city
+-
+TourisArea methods with areas names??
+-
+print implement methods from TourisArea and get all the varibles
+from the other methods and print the final document in String.format
+switch for cities and call methods.
+-
