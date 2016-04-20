@@ -15,6 +15,9 @@ public class Tourist_Program
       //print cars
       Cars cars = new Cars();
       Cars.cars();
+      
+      Hotels hotel = new SubHotels();
+      hotel.printcity();
     }
 
 }

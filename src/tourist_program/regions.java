@@ -36,28 +36,28 @@ public class regions
 
     System.out.println("here is the list of countries for you to Choose from ...");
     Display(country);
-    System.out.print("Choose a country: ");
+    System.out.print("--Choose a country: ");
     input_country = input.nextLine();
 
     if (input_country.equalsIgnoreCase("France"))
      {
        System.out.println("here is the list of cities for you to Choose from ...");
        Display(France);
-       System.out.print("Choose a city: ");
+       System.out.print("--Choose a city: ");
        input_city = input.nextLine();
      }
      else if (input_country.equalsIgnoreCase("United Kingdom"))
      {
        System.out.println("here is the list of cities for you to Choose from ...");
        Display(United_Kingdom);
-       System.out.print("Choose a city: ");
+       System.out.print("--Choose a city: ");
        input_city = input.nextLine();
      }
      else if (input_country.equalsIgnoreCase("Turkey"))
      {
        System.out.println("here is the list of cities for you to Choose from ...");
        Display(Turkey);
-       System.out.print("Choose a city: ");
+       System.out.print("--Choose a city: ");
        input_city = input.nextLine();
      }
      else
@@ -71,7 +71,8 @@ public class regions
 {
   for (String x : array )
    {
-    System.out.println(x);
+    System.out.print(x+"\t");
    }
+  System.out.println();
 }
 }
