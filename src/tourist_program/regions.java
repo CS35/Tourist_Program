@@ -3,6 +3,7 @@ here will be the switch statments used to select the city and contry
  */
 package tourist_program;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class regions
 {
 
@@ -13,10 +14,25 @@ public class regions
 
     String input_country;
     Scanner input = new Scanner(System.in);
-    String country[] = {"France","United Kingdom","Turkey"};
-    String France[] = {"Paris","Nice","Lyon"};
-    String United_Kingdom[] = {"London","Edinburgh","Liverpool"};
-    String Turkey[]={"Istanbul","Uzungol","Trabzon"};
+    ArrayList<String> country = new ArrayList<>();
+    ArrayList<String> France = new ArrayList<>();
+    ArrayList<String> United_Kingdom = new ArrayList<>();
+    ArrayList<String> Turkey = new ArrayList<>();
+    country.add("France");
+    country.add("United Kingdom");
+    country.add("Turkey");
+
+    France.add("Paris");
+    France.add("Nice");
+    France.add("Lyon");
+
+    United_Kingdom.add("London");
+    United_Kingdom.add("Edinburgh");
+    United_Kingdom.add("Liverpool");
+
+    Turkey.add("Istanbul");
+    Turkey.add("Uzungol");
+    Turkey.add("Trabzon");
 
     System.out.println("here is the list of countries for you to Choose from ...");
     Display(country);
@@ -44,7 +60,7 @@ public class regions
      }
 
   }
-  public void Display(String[] array)
+  public void Display(ArrayList<String> array)
 {
   for (String x : array )
    {
