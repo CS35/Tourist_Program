@@ -5,12 +5,13 @@ package tourist_program;
 import java.util.Scanner;
 public class regions
 {
+
+    String input_city;
   // could make cities and contries into a list
   public void regions()
   {
 
     String input_country;
-    String input_city;
     Scanner input = new Scanner(System.in);
     String country[] = {"France","United Kingdom","Turkey"};
     String France[] = {"Paris","Nice","Lyon","Marseille"};

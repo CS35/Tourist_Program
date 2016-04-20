@@ -3,6 +3,9 @@ main only call methods
 Cars print 2D array and store the value in varible and send it to print
 -
 Hotels same as cars
+switch get a variable from regions  
+print 2d array for each city (hotels names and price)
+
 -
 regions 
 print (lists???) contries and cities and store them in varibles and send them to print

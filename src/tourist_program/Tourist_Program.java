@@ -9,6 +9,8 @@ public class Tourist_Program
     {
       regions region = new regions();
       region.regions();
+      Cars cars = new Cars();
+      Cars.cars();
     }
 
 }
