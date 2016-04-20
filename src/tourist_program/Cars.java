@@ -9,7 +9,7 @@ public class Cars
 {
     public static void cars(){
         Scanner input = new Scanner(System.in);
-       System.out.println("choose which car you do wants?");
+       System.out.println("--choose which car do you wants?");
     String[][]cars = {{"car name","GMC Yukon","Toyota Yaris","Hyundai"},{"size","7","5","5"},{"price","700","306","326.5"}};
     
 //print 2D cars array
@@ -17,7 +17,7 @@ public class Cars
         {
             for (int col=0;col<cars[row].length;col++)
             {
-                  System.out.printf("\t %s  ",cars[row][col]);
+                  System.out.printf("%s  ",cars[row][col]);
             }
             System.out.println();
         }

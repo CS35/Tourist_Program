@@ -3,8 +3,13 @@ package tourist_program;
 
 public class Print extends Hotels
 {
-    @Override
-    public void printParisTurestArea(){
+    public void printParisTurestArea()
+    {
         
+    }
+    
+    public String toString()
+    {
+        return String.format(city);
     }
 }
