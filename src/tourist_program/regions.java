@@ -13,9 +13,9 @@ public class regions
     String input_city;
     Scanner input = new Scanner(System.in);
     String country[] = {"France","United Kingdom","Turkey"};
-    String France[] = {"Paris","Nice","Lyon","Marseille"};
-    String United_Kingdom[] = {"London","Edinburgh","Birmingham","Liverpool"};
-    String Turkey[]={"Istanbul","Antalya","Uzungol","Trabzon"};
+    String France[] = {"Paris","Nice","Lyon"};
+    String United_Kingdom[] = {"London","Edinburgh","Liverpool"};
+    String Turkey[]={"Istanbul","Uzungol","Trabzon"};
 
     System.out.println("here is the list of countries for you to Choose from ...");
     Display(country);
