@@ -10,7 +10,8 @@ public class Tourist_Program
       regions region = new regions();
       region.regions();
       //print hotels
-      
+      Print hotels = new Print();
+      hotels.printcity();
       //print cars
       Cars cars = new Cars();
       Cars.cars();
