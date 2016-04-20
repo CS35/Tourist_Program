@@ -20,6 +20,5 @@ public class Cars
             System.out.println();
         }
         String input_car =input.nextLine();
-        
-}
+        }
 }
