@@ -9,7 +9,7 @@ public abstract class Hotels implements TouristArea
     regions region = new regions();
     String city = region.input_city;
     public void printcity(){
-    switch (city)
+    switch (city.substring(0, 1).toUpperCase())
     {
     //France
     case "Paris": printParisHotel();

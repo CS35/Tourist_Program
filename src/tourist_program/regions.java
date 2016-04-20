@@ -38,25 +38,32 @@ public class regions
     Display(country);
     System.out.print("Choose a country: ");
     input_country = input.nextLine();
-    System.out.println("here is the list of cities for you to Choose from ...");
 
     if (input_country.equalsIgnoreCase("France"))
      {
+       System.out.println("here is the list of cities for you to Choose from ...");
        Display(France);
        System.out.print("Choose a city: ");
        input_city = input.nextLine();
      }
      else if (input_country.equalsIgnoreCase("United Kingdom"))
      {
+       System.out.println("here is the list of cities for you to Choose from ...");
        Display(United_Kingdom);
        System.out.print("Choose a city: ");
        input_city = input.nextLine();
      }
      else if (input_country.equalsIgnoreCase("Turkey"))
      {
+       System.out.println("here is the list of cities for you to Choose from ...");
        Display(Turkey);
        System.out.print("Choose a city: ");
        input_city = input.nextLine();
+     }
+     else
+     {
+       System.out.println("Sorry we don't have that country yet...");
+       System.exit(0);
      }
 
   }
