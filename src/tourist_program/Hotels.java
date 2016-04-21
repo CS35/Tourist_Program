@@ -9,6 +9,9 @@ public abstract class Hotels
     Scanner input = new Scanner(System.in);
     regions region = new regions();
     String city = region.input_city;
+    public Hotels(){
+       //constractor 
+    }
     public void printcity(){
     switch (city.substring(0, 1).toUpperCase())
     {

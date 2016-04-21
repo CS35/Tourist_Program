@@ -3,6 +3,7 @@ package tourist_program;
 
 public interface TouristArea 
 {
+    
     //France
     public void printParisTurestArea();
     public void printNiceTurestArea();

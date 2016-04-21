@@ -1,6 +1,6 @@
 
 package tourist_program;
-import java.util.Scanner;
+
 
 public class Tourist_Program
 {
@@ -10,14 +10,13 @@ public class Tourist_Program
       regions region = new regions();
       region.regions();
       //print hotels
-      Print hotels = new Print();
-      hotels.printcity();
-      //print cars
-      Cars cars = new Cars();
-      Cars.cars();
-      
       Hotels hotel = new SubHotels();
       hotel.printcity();
+      //print cars
+      Cars cars = new Cars();
+      cars.cars();
+      
+      
     }
 
 }
