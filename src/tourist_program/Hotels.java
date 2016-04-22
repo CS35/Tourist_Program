@@ -1,71 +1,23 @@
 
 package tourist_program;
 
-import java.util.Scanner;
 
 
-public abstract class Hotels 
+
+public interface Hotels
 {
-    Scanner input = new Scanner(System.in);
-    regions region = new regions();
-    String city = region.input_city;
-    public Hotels(){
-       //constractor 
-    }
-    public void printcity(){
-    switch (city.substring(0, 1).toUpperCase())
-    {
+    public void printcity();
+    
     //France
-    case "Paris": 
-    printParisHotel();
-    break;
-    case "Nice": 
-    printNiceHotel();
-    break;
-    case "Lyon": 
-    printLyonHotel();
-    break;
+    public void printParisHotel();
+    public void printNiceHotel();
+    public void printLyonHotel();
     //United Kingdom
-    case "London": 
-    printLondonHotel();
-    break;
-    case "Edinburgh": 
-    printEdinburghHotel();
-    break;
-    case "Liverpool": 
-    printLiverpoolHotel();
-    break;
-    //Turkey
-    case "Istanbul": 
-    printIstanbulHotel();
-    break;
-    case "Uzungol": 
-    printUzungolHotel();
-    break;
-    case "Trabzon": 
-    printTrabzonHotel();
-    break;     
-}
-    }
-    //France
-    public void printParisHotel(){
-    }
-     public void printNiceHotel(){
-    }
-      public void printLyonHotel(){
-    }
-    //United Kingdom
-      public void printLondonHotel(){
-    }
-      public void printEdinburghHotel(){
-    }
-      public void printLiverpoolHotel(){
-    }
+      public void printLondonHotel();
+      public void printEdinburghHotel();
+      public void printLiverpoolHotel();
     //Turkey  
-      public void printIstanbulHotel(){
-    }
-      public void printUzungolHotel(){
-    }
-      public void printTrabzonHotel(){
-    }
+      public void printIstanbulHotel();
+      public void printUzungolHotel();
+      public void printTrabzonHotel();
 }

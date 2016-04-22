@@ -1,8 +1,49 @@
 
 package tourist_program;
 
-public class SubHotels extends Hotels 
+import java.util.Scanner;
+
+public class SubHotels implements Hotels 
 {
+    Scanner input = new Scanner(System.in);
+    regions region = new regions();
+    String city = region.input_city;
+    @Override
+    public void printcity(){
+    switch (city.substring(0, 1).toUpperCase())
+    {
+    //France
+    case "Paris": 
+    printParisHotel();
+    break;
+    case "Nice": 
+    printNiceHotel();
+    break;
+    case "Lyon": 
+    printLyonHotel();
+    break;
+    //United Kingdom
+    case "London": 
+    printLondonHotel();
+    break;
+    case "Edinburgh": 
+    printEdinburghHotel();
+    break;
+    case "Liverpool": 
+    printLiverpoolHotel();
+    break;
+    //Turkey
+    case "Istanbul": 
+    printIstanbulHotel();
+    break;
+    case "Uzungol": 
+    printUzungolHotel();
+    break;
+    case "Trabzon": 
+    printTrabzonHotel();
+    break;     
+}
+    }
     @Override
     public void printParisHotel(){
         String[][]parisHotel = {{"hotel name","Select Hotel","Elyees Union","Doisy Etoile"},{"price","787-1356","539-786","1742-3284"}};
@@ -93,6 +134,7 @@ public class SubHotels extends Hotels
     }
          String input_hotel =input.nextLine();
     }
+    
     @Override
       public void printTrabzonHotel(){
         String[][]trabzonHotel = {{"hotel name","Nur Hotel","TS Park Hotel","Horon Hotel"},{"price","212-340","271-392","208-339"}};
@@ -104,8 +146,8 @@ public class SubHotels extends Hotels
     }
          String input_hotel =input.nextLine();
     }
- 
-}
+ }
+
 
     
 
