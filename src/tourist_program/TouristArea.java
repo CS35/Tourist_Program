@@ -8,7 +8,6 @@ public interface TouristArea
     public void printParisTouristArea();
     public void printNiceTouristArea();
     public void printLyonTouristArea();
-    public void printMarseilleTouristArea();
     //United Kongdom
     public void printLondonTouristArea();
     public void printEdinburghTouristArea();

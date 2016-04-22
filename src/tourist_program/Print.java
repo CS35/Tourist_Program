@@ -94,8 +94,9 @@ public class Print implements TouristArea
         System.out.println("Tourist Area in Trabzon:\n"
                + " -Avrupali Pazari\n -Kaymakli Monastery\n -Boztepe");
     }
+    @Override
     public String toString()
     {
-        return String.format("", );
+        return String.format(touristArea);
     }
     }

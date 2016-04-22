@@ -23,6 +23,7 @@ public class Tourist_Program
       hotels = hotel.printcity();
       
       Print print = new Print(Country,City,Car,hotels);
+      System.out.println(print);
       
     }
 
