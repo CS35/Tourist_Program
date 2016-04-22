@@ -12,11 +12,9 @@ public interface TouristArea
     //United Kongdom
     public void printLondonTouristArea();
     public void printEdinburghTouristArea();
-    public void printBirminghamTouristArea();
     public void printLiverpoolTouristArea();
     //Turkey
     public void printIstanbulTouristArea();
-    public void printAntalyaTouristArea();
     public void printUzungolTouristArea();
     public void printTrabzonTouristArea();
 }
