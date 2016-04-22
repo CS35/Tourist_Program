@@ -5,55 +5,67 @@ package tourist_program;
 
 public class Print implements TouristArea 
 {
+    String Country,City,Car,Hotel;
+    public Print(String Country,String City,String Car, String Hotel)
+    {
+        this.Country = Country;
+        this.City = City;
+        this.Car = Car;
+        this.Hotel = Hotel;
+    }
     //France
     @Override
-    public void printParisTurestArea(){
+    public void printParisTouristArea(){
         
     }
     @Override
-    public void printNiceTurestArea(){
+    public void printNiceTouristArea(){
         
     }
     @Override
-    public void printLyonTurestArea(){
+    public void printLyonTouristArea(){
         
     }
     @Override
-    public void printMarseilleTurestArea(){
+    public void printMarseilleTouristArea(){
         
     }
     //United Kongdom
     @Override
-    public void printLondonTurestArea(){
+    public void printLondonTouristArea(){
         
     }
     @Override
-    public void printEdinburghTurestArea(){
+    public void printEdinburghTouristArea(){
         
     }
     @Override
-    public void printBirminghamTurestArea(){
+    public void printBirminghamTouristArea(){
         
     }
     @Override
-    public void printLiverpoolTurestArea(){
+    public void printLiverpoolTouristArea(){
         
     }
     //Turkey
     @Override
-    public void printIstanbulTurestArea(){
+    public void printIstanbulTouristArea(){
         
     }
     @Override
-    public void printAntalyaTurestArea(){
+    public void printAntalyaTouristArea(){
         
     }
     @Override
-    public void printUzungolTurestArea(){
+    public void printUzungolTouristArea(){
         
     }
     @Override
-    public void printTrabzonTurestArea(){
+    public void printTrabzonTouristArea(){
         
+    }
+    public String toString()
+    {
+        return String.format("", );
     }
     }

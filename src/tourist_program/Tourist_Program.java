@@ -1,6 +1,5 @@
 
 package tourist_program;
-import java.util.Scanner;
 
 public class Tourist_Program
 {
@@ -9,7 +8,7 @@ public class Tourist_Program
     {//print cuntry and city
       String Country;
       String City;
-      String Car;
+      String Car,hotels;
       regions region = new regions();
       Country=region.Country();
       City = region.City(Country);
@@ -21,7 +20,10 @@ public class Tourist_Program
       Car = Cars.cars();
       
       SubHotels hotel = new SubHotels(City);
-      hotel.printcity();
+      hotels = hotel.printcity();
+      
+      Print print = new Print(Country,City,Car,hotels);
+      
     }
 
 }

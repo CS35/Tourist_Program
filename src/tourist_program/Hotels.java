@@ -6,77 +6,87 @@ import java.util.Scanner;
 public abstract class Hotels 
 {
     String city;
+    String hotel;
+    String input_hotel;
     Scanner input = new Scanner(System.in);
     public Hotels(String City)
     {
         this.city = City;
     }
-    
- 
-    public void printcity(){
+    public String printcity(){
     switch (city)
     {
     //France
     case "paris":
     case "Paris": 
-    printParisHotel();
+    hotel = printParisHotel();
     break;
     case "nice":
     case "Nice": 
-    printNiceHotel();
+    hotel = printNiceHotel();
     break;
     case "lyon":
     case "Lyon": 
-    printLyonHotel();
+    hotel = printLyonHotel();
     break;
     //United Kingdom
     case "london":
     case "London": 
-    printLondonHotel();
+    hotel = printLondonHotel();
     break;
     case "edinburgh":
     case "Edinburgh": 
-    printEdinburghHotel();
+    hotel = printEdinburghHotel();
     break;
     case "liverpool":
     case "Liverpool": 
-    printLiverpoolHotel();
+    hotel = printLiverpoolHotel(); 
     break;
     //Turkey
     case "istanbul": 
     case "Istanbul": 
-    printIstanbulHotel();
+    hotel = printIstanbulHotel();
     break;
     case "uzungol": 
     case "Uzungol": 
-    printUzungolHotel();
+    hotel = printUzungolHotel();
     break;
     case "trabzon": 
     case "Trabzon": 
-    printTrabzonHotel();
+    hotel = printTrabzonHotel();
     break;     
 }
+    return hotel;
     }
     //France
-    public void printParisHotel(){
+    public String printParisHotel(){
+        return input_hotel;
     }
-     public void printNiceHotel(){
+     public String printNiceHotel(){
+         return input_hotel;
     }
-      public void printLyonHotel(){
+      public String printLyonHotel(){
+          return input_hotel;
     }
     //United Kingdom
-      public void printLondonHotel(){
+      public String printLondonHotel(){
+          return input_hotel;
     }
-      public void printEdinburghHotel(){
+      public String printEdinburghHotel(){
+          return input_hotel;
     }
-      public void printLiverpoolHotel(){
+      public String printLiverpoolHotel(){
+          return input_hotel;
     }
     //Turkey  
-      public void printIstanbulHotel(){
+      public String printIstanbulHotel(){
+          return input_hotel;
     }
-      public void printUzungolHotel(){
+      public String printUzungolHotel(){
+          return input_hotel;
     }
-      public void printTrabzonHotel(){
+      public String printTrabzonHotel(){
+          return input_hotel;
     }
  
 }

@@ -5,18 +5,18 @@ public interface TouristArea
 {
     
     //France
-    public void printParisTurestArea();
-    public void printNiceTurestArea();
-    public void printLyonTurestArea();
-    public void printMarseilleTurestArea();
+    public void printParisTouristArea();
+    public void printNiceTouristArea();
+    public void printLyonTouristArea();
+    public void printMarseilleTouristArea();
     //United Kongdom
-    public void printLondonTurestArea();
-    public void printEdinburghTurestArea();
-    public void printBirminghamTurestArea();
-    public void printLiverpoolTurestArea();
+    public void printLondonTouristArea();
+    public void printEdinburghTouristArea();
+    public void printBirminghamTouristArea();
+    public void printLiverpoolTouristArea();
     //Turkey
-    public void printIstanbulTurestArea();
-    public void printAntalyaTurestArea();
-    public void printUzungolTurestArea();
-    public void printTrabzonTurestArea();
+    public void printIstanbulTouristArea();
+    public void printAntalyaTouristArea();
+    public void printUzungolTouristArea();
+    public void printTrabzonTouristArea();
 }
