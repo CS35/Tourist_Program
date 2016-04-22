@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Cars 
 {
-    public void cars(){
+    public static String cars(){
         Scanner input = new Scanner(System.in);
         
        System.out.println("--choose which car do you wants?");
@@ -21,5 +21,9 @@ public class Cars
             System.out.println();
         }
         String input_car =input.nextLine();
-        }
-    }
+        
+    return input_car;
+}
+}
+        
+    

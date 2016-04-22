@@ -6,21 +6,27 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class regions
 {
-
-    String input_city;
-  // could make cities and contries into a list
-  public void regions()
-  {
-
-    String input_country;
     Scanner input = new Scanner(System.in);
-    ArrayList<String> country = new ArrayList<>();
+    
+  public String Country()
+  {
+      String input_country;
+      ArrayList<String> country = new ArrayList<>();
+      country.add("France");
+      country.add("United Kingdom");
+      country.add("Turkey");
+      System.out.println("here is the list of countries for you to Choose from ...");
+      Display(country);
+      System.out.print("--Choose a country: ");
+      input_country = input.nextLine();
+      return input_country;
+  }
+  public String City(String Country)
+  { 
+    String input_city;
     ArrayList<String> France = new ArrayList<>();
     ArrayList<String> United_Kingdom = new ArrayList<>();
     ArrayList<String> Turkey = new ArrayList<>();
-    country.add("France");
-    country.add("United Kingdom");
-    country.add("Turkey");
 
     France.add("Paris");
     France.add("Nice");
@@ -33,27 +39,22 @@ public class regions
     Turkey.add("Istanbul");
     Turkey.add("Uzungol");
     Turkey.add("Trabzon");
-
-    System.out.println("here is the list of countries for you to Choose from ...");
-    Display(country);
-    System.out.print("--Choose a country: ");
-    input_country = input.nextLine();
-
-    if (input_country.equalsIgnoreCase("France"))
+    
+    if (Country.equalsIgnoreCase("France"))
      {
        System.out.println("here is the list of cities for you to Choose from ...");
        Display(France);
        System.out.print("--Choose a city: ");
        input_city = input.nextLine();
      }
-     else if (input_country.equalsIgnoreCase("United Kingdom"))
+     else if (Country.equalsIgnoreCase("United Kingdom"))
      {
        System.out.println("here is the list of cities for you to Choose from ...");
        Display(United_Kingdom);
        System.out.print("--Choose a city: ");
        input_city = input.nextLine();
      }
-     else if (input_country.equalsIgnoreCase("Turkey"))
+     else if (Country.equalsIgnoreCase("Turkey"))
      {
        System.out.println("here is the list of cities for you to Choose from ...");
        Display(Turkey);
@@ -63,9 +64,10 @@ public class regions
      else
      {
        System.out.println("Sorry we don't have that country yet...");
+       input_city = "";
        System.exit(0);
      }
-
+      return input_city;
   }
   public void Display(ArrayList<String> array)
 {
