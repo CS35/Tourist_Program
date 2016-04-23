@@ -9,6 +9,7 @@ public abstract class Hotels
     String hotel;
     String input_hotel;
     Scanner input = new Scanner(System.in);
+    //constructor
     public Hotels(String City)
     {
         this.city = City;

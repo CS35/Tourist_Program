@@ -2,10 +2,10 @@
 package tourist_program;
 
 
-
 public class Print implements TouristArea 
 {
     String Country,City,Car,Hotel,touristArea;
+    //constructor
     public Print(String Country,String City,String Car, String Hotel)
     {
         this.Country = Country;
@@ -13,6 +13,7 @@ public class Print implements TouristArea
         this.Car = Car;
         this.Hotel = Hotel;
     }
+    //switch to print tourist area
     switch (city)
     {
     //France
