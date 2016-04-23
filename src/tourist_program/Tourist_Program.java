@@ -1,6 +1,6 @@
 
 package tourist_program;
-
+import javax.swing.JOptionPane;
 public class Tourist_Program
 {
 
@@ -22,7 +22,7 @@ public class Tourist_Program
       Car = Cars.cars();
       
       Print print = new Print(Country,City,Car,hotels);
-      System.out.println(print);
+      JOptionPane.showMessageDialog(null,print);
       
     }
 

@@ -1,8 +1,11 @@
 
 package tourist_program;
 
+import java.util.Arrays;
+import javax.swing.JOptionPane;
+
 public class SubHotels extends Hotels 
-{
+{   
     public SubHotels(String City)
     {
         super(City);
@@ -10,112 +13,95 @@ public class SubHotels extends Hotels
     }
     @Override
     public String printParisHotel(){
-        String[][]parisHotel = {{"hotel name","Select Hotel","Elyees Union","Doisy Etoile"},{"price","787-1356","539-786","1742-3284"}};
-        for (String[] arr:parisHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
+        String[][]parisHotel = {{"name","price"},{"Select Hotel","787$-1356$"},{"Elyees Union","539$-786$"},{"Doisy Etoile","1742$-3284$"}};
+    
+        String output = "";
+        for (String[] parisHotel1 : parisHotel) {
+            output += Arrays.toString(parisHotel1) + "\n";
         }
-        input_hotel =input.nextLine();
+    input_hotel = JOptionPane.showInputDialog(output);
         return input_hotel;
     }
     @Override
      public String printNiceHotel(){
-        String[][]niceHotel = {{"hotel name","Negresco Hotel","Beau Rivage","Brice Hotel"},{"price","1020-6416","561-1381","336-497"}};
-        for (String[] arr:niceHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
+        String[][]niceHotel = {{"name","price"},{"Negresco Hotel","1020$-6416$"},{"Beau Rivage","561$-1381$"},{"Brice Hotel","336$-497$"}};
+        String output = "";
+        for (String[] niceHotel1 : niceHotel) {
+            output += Arrays.toString(niceHotel1) + "\n";
         }
-        input_hotel =input.nextLine();
+        input_hotel = JOptionPane.showInputDialog(output);
         return input_hotel;
     }
     @Override
       public String printLyonHotel(){
-        String[][]lyonHotel = {{"hotel name","Alexandra","Republik Hotel","Fourviere Hotel"},{"price","361-591","344-400","608-1445"}};
-        for (String[] arr:lyonHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
+        String[][]lyonHotel = {{"name","price"},{"Alexandra","361$-591$"},{"Republik Hotel","344$-400$"},{"Fourviere Hotel","608$-1445$"}};
+        String output = "";
+        for (String[] lyonHotel1 : lyonHotel) {
+            output += Arrays.toString(lyonHotel1) + "\n";
         }
-        input_hotel =input.nextLine();
+        input_hotel = JOptionPane.showInputDialog(output);
         return input_hotel;
     }
     //United Kingdom
     @Override
       public String printLondonHotel(){
-        String[][]londonHotel = {{"hotel name","The Montclam","Landmarket London","The Capital"},{"price","1735-2255","1478-5889","1392-2034"}};
-        for (String[] arr:londonHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
+        String[][]londonHotel = {{"name","price"},{"The Montclam","1735$-2255$"},{"Landmarket London","1478$-5889$"},{"The Capital","1392$-2034$"}};
+        String output = "";
+        for (String[] londonHotel1 : londonHotel) {
+            output += Arrays.toString(londonHotel1) + "\n";
         }
-        input_hotel =input.nextLine();
+        input_hotel = JOptionPane.showInputDialog(output);
         return input_hotel;
     }
     @Override
       public String printEdinburghHotel(){
-        String[][]edinburghHotel = {{"hotel name","Grassmarket Hotel","Abbey Hotel","The Bonham"},{"price","402-750","268-642","476-739"}};
-        for (String[] arr:edinburghHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
+        String[][]edinburghHotel = {{"name","price"},{"Grassmarket Hotel","402$-750$"},{"Abbey Hotel","268$-642$"},{"The Bonham","476$-739$"}};
+        String output = "";
+        for (String[] edinburghHotel1 : edinburghHotel) {
+            output += Arrays.toString(edinburghHotel1) + "\n";
         }
-        input_hotel =input.nextLine();
+        input_hotel = JOptionPane.showInputDialog(output);
         return input_hotel;
     }
     @Override
       public String printLiverpoolHotel(){
-        String[][]liverpoolHotel = {{"hotel name","Hatters Liverpool","Hanover Hotel","Hotelanfield"},{"price","80-600","405-614","314-542"}};
-        for (String[] arr:liverpoolHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
+        String[][]liverpoolHotel = {{"hotel name","price"},{"Hatters Liverpool","80$-600$"},{"Hanover Hotel","405$-614$"},{"Hotelanfield","314$-542$"}};
+        String output = "";
+        for (String[] liverpoolHotel1 : liverpoolHotel) {
+            output += Arrays.toString(liverpoolHotel1) + "\n";
         }
-        input_hotel =input.nextLine();
+        input_hotel = JOptionPane.showInputDialog(output);
         return input_hotel;
     }
     //Turkey  
     @Override
       public String printIstanbulHotel(){
-        String[][]istanbulHotel = {{"hotel name","Overland Residence","Lasagrada Hotel","Midtown Hotel"},{"price","382-2138","237-540","379-652"}};
-        for (String[] arr:istanbulHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
-    }
-          input_hotel =input.nextLine();
+        String[][]istanbulHotel = {{"hotel name","price"},{"Overland Residence","382$-2138$"},{"Lasagrada Hotel","237$-540$"},{"Midtown Hotel","379$-652$"}};
+        String output = "";
+        for (String[] tanbulHotel : istanbulHotel) {
+            output += Arrays.toString(tanbulHotel) + "\n";
+        }
+        input_hotel = JOptionPane.showInputDialog(output);
           return input_hotel;
     }
     @Override
       public String printUzungolHotel(){
-        String[][]uzungolHotel = {{"hotel name","Kulogu Hotel","Klipa Hotel","Kusva Apart"},{"price","275-424","313-534","148-212"}};
-        for (String[] arr:uzungolHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
-    }
-         input_hotel =input.nextLine();
+        String[][]uzungolHotel = {{"name","price"},{"Kulogu Hotel","275$-424$"},{"Klipa Hotel","313$-534$"},{"Kusva Apart","148$-212$"}};
+        String output = "";
+        for (String[] uzungolHotel1 : uzungolHotel) {
+            output += Arrays.toString(uzungolHotel1) + "\n";
+        }
+        input_hotel = JOptionPane.showInputDialog(output);
          return input_hotel;
     }
     @Override
       public String printTrabzonHotel(){
-        String[][]trabzonHotel = {{"hotel name","Nur Hotel","TS Park Hotel","Horon Hotel"},{"price","212-340","271-392","208-339"}};
-        for (String[] arr:trabzonHotel){ 
-        for (String i : arr)
-                System.out.printf("%s  ",i);
-            
-            System.out.println();
-    }
-         input_hotel =input.nextLine();
+        String[][]trabzonHotel = {{"name","price"},{"Nur Hotel","212-340"},{"TS Park Hotel","271-392"},{"Horon Hotel","208-339"}};
+        String output = "";
+        for (String[] trabzonHotel1 : trabzonHotel) {
+            output += Arrays.toString(trabzonHotel1) + "\n";
+        }
+        input_hotel = JOptionPane.showInputDialog(output);
          return input_hotel;
     }
  

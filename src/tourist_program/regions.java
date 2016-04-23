@@ -4,6 +4,7 @@ here will be the switch statments used to select the city and contry
 package tourist_program;
 import java.util.Scanner;
 import java.util.ArrayList;
+import javax.swing.*;
 public class regions
 {
     Scanner input = new Scanner(System.in);
@@ -15,10 +16,8 @@ public class regions
       country.add("France");
       country.add("United Kingdom");
       country.add("Turkey");
-      System.out.println("here is the list of countries for you to Choose from ...");
-      Display(country);
-      System.out.print("--Choose a country: ");
-      input_country = input.nextLine();
+      JOptionPane.showMessageDialog(null,"here is the list of countries for you to Choose from ...");
+      input_country = JOptionPane.showInputDialog(new JScrollPane(new JList(country.toArray())));
       return input_country;
   }
   public String City(String Country)
@@ -42,39 +41,25 @@ public class regions
     
     if (Country.equalsIgnoreCase("France"))
      {
-       System.out.println("here is the list of cities for you to Choose from ...");
-       Display(France);
-       System.out.print("--Choose a city: ");
-       input_city = input.nextLine();
+       JOptionPane.showMessageDialog(null,"here is the list of cities for you to Choose from ...");
+       input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(France.toArray())));
      }
      else if (Country.equalsIgnoreCase("United Kingdom"))
      {
-       System.out.println("here is the list of cities for you to Choose from ...");
-       Display(United_Kingdom);
-       System.out.print("--Choose a city: ");
-       input_city = input.nextLine();
+       JOptionPane.showMessageDialog(null,"here is the list of cities for you to Choose from ...");
+       input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(United_Kingdom.toArray())));
      }
      else if (Country.equalsIgnoreCase("Turkey"))
      {
-       System.out.println("here is the list of cities for you to Choose from ...");
-       Display(Turkey);
-       System.out.print("--Choose a city: ");
-       input_city = input.nextLine();
+       JOptionPane.showMessageDialog(null,"here is the list of cities for you to Choose from ...");
+       input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(Turkey.toArray())));
      }
      else
      {
-       System.out.println("Sorry we don't have that country yet...");
+       JOptionPane.showMessageDialog(null,"Sorry we don't have that country yet...");
        input_city = "";
        System.exit(0);
      }
       return input_city;
   }
-  public void Display(ArrayList<String> array)
-{
-  for (String x : array )
-   {
-    System.out.print(x+"\t");
-   }
-  System.out.println();
-}
 }
