@@ -59,34 +59,16 @@ public abstract class Hotels
     return hotel;
     }
     //France
-    public String printParisHotel(){
-        return input_hotel;
-    }
-     public String printNiceHotel(){
-         return input_hotel;
-    }
-      public String printLyonHotel(){
-          return input_hotel;
-    }
+    public abstract String printParisHotel();
+     public abstract String printNiceHotel();
+      public abstract String printLyonHotel();
     //United Kingdom
-      public String printLondonHotel(){
-          return input_hotel;
-    }
-      public String printEdinburghHotel(){
-          return input_hotel;
-    }
-      public String printLiverpoolHotel(){
-          return input_hotel;
-    }
+      public abstract String printLondonHotel();
+      public abstract String printEdinburghHotel();
+      public abstract String printLiverpoolHotel();
     //Turkey  
-      public String printIstanbulHotel(){
-          return input_hotel;
-    }
-      public String printUzungolHotel(){
-          return input_hotel;
-    }
-      public String printTrabzonHotel(){
-          return input_hotel;
-    }
+      public abstract String printIstanbulHotel();
+      public abstract String printUzungolHotel();
+      public abstract String printTrabzonHotel();
  
 }
