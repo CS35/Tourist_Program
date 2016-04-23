@@ -9,7 +9,6 @@ public abstract class Hotels
     String hotel;
     String input_hotel;
     Scanner input = new Scanner(System.in);
-    //constructor
     public Hotels(String City)
     {
         this.city = City;
@@ -60,16 +59,34 @@ public abstract class Hotels
     return hotel;
     }
     //France
-    public abstract String printParisHotel();
-     public abstract String printNiceHotel();
-      public abstract String printLyonHotel();
+    public String printParisHotel(){
+        return input_hotel;
+    }
+     public String printNiceHotel(){
+         return input_hotel;
+    }
+      public String printLyonHotel(){
+          return input_hotel;
+    }
     //United Kingdom
-      public abstract String printLondonHotel();
-      public abstract String printEdinburghHotel();
-      public abstract String printLiverpoolHotel();
+      public String printLondonHotel(){
+          return input_hotel;
+    }
+      public String printEdinburghHotel(){
+          return input_hotel;
+    }
+      public String printLiverpoolHotel(){
+          return input_hotel;
+    }
     //Turkey  
-      public abstract String printIstanbulHotel();
-      public abstract String printUzungolHotel();
-      public abstract String printTrabzonHotel();
+      public String printIstanbulHotel(){
+          return input_hotel;
+    }
+      public String printUzungolHotel(){
+          return input_hotel;
+    }
+      public String printTrabzonHotel(){
+          return input_hotel;
+    }
  
 }

@@ -2,7 +2,7 @@
 package tourist_program;
 
 public class SubHotels extends Hotels 
-{   //constructor
+{
     public SubHotels(String City)
     {
         super(City);

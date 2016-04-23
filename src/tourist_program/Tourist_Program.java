@@ -12,13 +12,16 @@ public class Tourist_Program
       regions region = new regions();
       Country=region.Country();
       City = region.City(Country);
+      
       //print hotels
-      SubHotels hotel = new SubHotels(City);
-      hotels = hotel.printcity();
+      
       //print cars
       Cars cars = new Cars();
       Car = Cars.cars();
-      //print report
+      
+      SubHotels hotel = new SubHotels(City);
+      hotels = hotel.printcity();
+      
       Print print = new Print(Country,City,Car,hotels);
       System.out.println(print);
       

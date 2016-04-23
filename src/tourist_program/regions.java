@@ -1,11 +1,13 @@
-
+/*
+here will be the switch statments used to select the city and contry
+ */
 package tourist_program;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class regions
 {
     Scanner input = new Scanner(System.in);
-    //ask user to choose Country
+    
   public String Country()
   {
       String input_country;
@@ -19,7 +21,6 @@ public class regions
       input_country = input.nextLine();
       return input_country;
   }
-  //ask user to choose City
   public String City(String Country)
   { 
     String input_city;
@@ -68,7 +69,6 @@ public class regions
      }
       return input_city;
   }
-  //prit Cities
   public void Display(ArrayList<String> array)
 {
   for (String x : array )
