@@ -13,90 +13,102 @@ public class Print implements TouristArea
         this.Car = Car;
         this.Hotel = Hotel;
     }
-    switch (city)
+    public String ChooseACity()
+    {
+    switch (City)
     {
     //France
+    case "paris": 
     case "Paris": 
     touristArea = printParisTouristArea();
     break;
+    case "nice":
     case "Nice": 
     touristArea = printNiceTouristArea();
     break;
+    case "lyon":
     case "Lyon": 
     touristArea = printLyonTouristArea();
     break;
     //United Kingdom
+    case "london": 
     case "London": 
     touristArea = printLondonTouristArea();
     break;
+    case "edinburgh": 
     case "Edinburgh": 
     touristArea = printEdinburghTouristArea();
     break;
+    case "liverpool": 
     case "Liverpool": 
     touristArea = printLiverpoolTouristArea(); 
     break;
     //Turkey
+    case "istanbul": 
     case "Istanbul": 
     touristArea = printIstanbulTouristArea();
     break;
+    case "Uuzungol":
     case "Uzungol": 
     touristArea = printUzungolTouristArea();
     break;
+    case "trabzon":
     case "Trabzon": 
     touristArea = printTrabzonTouristArea();
     break;     
 }
+    return touristArea;
+    }
     //France
     @Override
-    public void printParisTouristArea(){
-       System.out.println("Tourist Area in Paris:\n"
-               + " -Eiffel tower\n -the louvre Museum\n -Paris panorama");
+    public String printParisTouristArea(){
+       return "Tourist Area in Paris:\n -Eiffel tower\n -the louvre Museum\n -Paris panorama";
     }
     @Override
-    public void printNiceTouristArea(){
-        System.out.println("Tourist Area in Nice:\n"
-               + " -Musee Marc Chagall\n -Cours Saleya\n -Paris panorama");
+    public String printNiceTouristArea(){
+       return "Tourist Area in Nice:\n"
+               + " -Musee Marc Chagall\n -Cours Saleya\n -Paris panorama";
     }
     @Override
-    public void printLyonTouristArea(){
-        System.out.println("Tourist Area in Lyon:\n"
-               + " -Lyon Cathedral\n -Mur des Canuts\n -Rue St-jean");
+    public String printLyonTouristArea(){
+        return "Tourist Area in Lyon:\n"
+               + " -Lyon Cathedral\n -Mur des Canuts\n -Rue St-jean";
     }
     //United Kongdom
     @Override
-    public void printLondonTouristArea(){
-        System.out.println("Tourist Area in London:\n"
-               + " -Palace of Westminster\n -London Eye\n -British Museum");
+    public String printLondonTouristArea(){
+        return "Tourist Area in London:\n"
+               + " -Palace of Westminster\n -London Eye\n -British Museum";
     }
     @Override
-    public void printEdinburghTouristArea(){
-        System.out.println("Tourist Area in Edinburgh:\n"
-               + " -Loch Lomond\n -Royal Mile\n -Grassmarket");
+    public String printEdinburghTouristArea(){
+        return "Tourist Area in Edinburgh:\n"
+               + " -Loch Lomond\n -Royal Mile\n -Grassmarket";
     }
     @Override
-    public void printLiverpoolTouristArea(){
-        System.out.println("Tourist Area in Liverpool:\n"
-               + " -Museum of Liverpool\n -Casbah Coffee  Club\n -Walker Art Gallery");
+    public String printLiverpoolTouristArea(){
+        return "Tourist Area in Liverpool:\n"
+               + " -Museum of Liverpool\n -Casbah Coffee  Club\n -Walker Art Gallery";
     }
     //Turkey
     @Override
-    public void printIstanbulTouristArea(){
-        System.out.println("Tourist Area in Istanbul:\n"
-               + " -Grand Bazzar\n -Aya sofya\n -Blue Mosque");
+    public String printIstanbulTouristArea(){
+        return "Tourist Area in Istanbul:\n"
+               + " -Grand Bazzar\n -Aya sofya\n -Blue Mosque";
     }
     @Override
-    public void printUzungolTouristArea(){
-        System.out.println("Tourist Area in Uzungol:\n"
-               + " -Walk round the lake\n -Black lack\n -Fish farms");
+    public String printUzungolTouristArea(){
+        return "Tourist Area in Uzungol:\n"
+               + " -Walk round the lake\n -Black lack\n -Fish farms";
     }
     @Override
-    public void printTrabzonTouristArea(){
-        System.out.println("Tourist Area in Trabzon:\n"
-               + " -Avrupali Pazari\n -Kaymakli Monastery\n -Boztepe");
+    public String printTrabzonTouristArea(){
+        return "Tourist Area in Trabzon:\n"
+               + " -Avrupali Pazari\n -Kaymakli Monastery\n -Boztepe";
     }
     @Override
     public String toString()
     {
-        return String.format(" Welcome to our ptogram\n Country: %s\n City: %s\n hotel: %s\n car: %s\n here some Touris area in your City:\n %s ",Country,City,Hotel,Car,touristArea);
+        return String.format(" Welcome to our ptogram\n Country: %s\n City: %s\n hotel: %s\n car: %s\n here some Touris area in your City:\n %s ",Country,City,Hotel,Car,ChooseACity());
     }
     }

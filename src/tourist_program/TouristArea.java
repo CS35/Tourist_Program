@@ -5,15 +5,15 @@ public interface TouristArea
 {
     
     //France
-    public void printParisTouristArea();
-    public void printNiceTouristArea();
-    public void printLyonTouristArea();
+    public String printParisTouristArea();
+    public String printNiceTouristArea();
+    public String printLyonTouristArea();
     //United Kongdom
-    public void printLondonTouristArea();
-    public void printEdinburghTouristArea();
-    public void printLiverpoolTouristArea();
+    public String printLondonTouristArea();
+    public String printEdinburghTouristArea();
+    public String printLiverpoolTouristArea();
     //Turkey
-    public void printIstanbulTouristArea();
-    public void printUzungolTouristArea();
-    public void printTrabzonTouristArea();
+    public String printIstanbulTouristArea();
+    public String printUzungolTouristArea();
+    public String printTrabzonTouristArea();
 }
