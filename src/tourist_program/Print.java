@@ -97,6 +97,6 @@ public class Print implements TouristArea
     @Override
     public String toString()
     {
-        return String.format(touristArea);
+        return String.format(" Welcome to our ptogram\n Country: %s\n City: %s\n hotel: %s\n car: %s\n here some Touris area in your City:\n %s ",Country,City,Hotel,Car,touristArea);
     }
     }
