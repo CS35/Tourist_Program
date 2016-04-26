@@ -1,4 +1,6 @@
-
+/*
+define tourist area method
+*/
 package tourist_program;
 
 public interface TouristArea 

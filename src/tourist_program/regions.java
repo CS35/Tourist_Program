@@ -1,5 +1,5 @@
 /*
-here will be the switch statments used to select the city and contry
+here select the city and country
  */
 package tourist_program;
 import java.util.Scanner;
@@ -13,15 +13,15 @@ public class regions
   public String Country()
   {
       String input_country;
-      ArrayList<String> country = new ArrayList<>();
+      ArrayList<String> country = new ArrayList<>();//array list of country
       country.add("France");
       country.add("United Kingdom");
       country.add("Turkey");
-      JOptionPane.showMessageDialog(null,"here is the list of countries for you to Choose from ...");
-      input_country = JOptionPane.showInputDialog(new JScrollPane(new JList(country.toArray())));
+      JOptionPane.showMessageDialog(null,"here is the list of countries for you to Choose from ...");//display massge
+      input_country = JOptionPane.showInputDialog(new JScrollPane(new JList(country.toArray())));//here custumer will choose country
       return input_country;
   }
-      public void CityOrZip(String Country)
+      public void CityOrZip(String Country)//method to choose between city or zipCode
     {
         String choice;
         choice = JOptionPane.showInputDialog(null ,"Do you want to enter a city name or a zip code ?");
@@ -46,7 +46,7 @@ public class regions
         }
     }
     
-  public String City(String Country)
+  public String City(String Country)//method to choose city by name
   { 
     String input_city;
     ArrayList<String> France = new ArrayList<>();
@@ -103,7 +103,8 @@ public class regions
      }
       return input_city;
   }
-  public String City(int Country)
+  //polymorphism
+  public String City(int Country)//method to choose city by zipCode
   { 
     String input_city;
     

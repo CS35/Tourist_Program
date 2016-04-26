@@ -1,18 +1,17 @@
+/*
+implementation TouristArea method
+*/
 
 package tourist_program;
 
-
-
-public class Print implements TouristArea 
+public class SubArea implements TouristArea 
 {
-    String Country,City,Car,Hotel,touristArea;
-    public Print(String Country,String City,String Car, String Hotel)
+    String City,touristArea;
+    public SubArea(String City)
     {
-        this.Country = Country;
         this.City = City;
-        this.Car = Car;
-        this.Hotel = Hotel;
     }
+    //choose Torist area method by city
     public String ChooseACity()
     {
     switch (City)
@@ -68,6 +67,7 @@ public class Print implements TouristArea
 }
     return touristArea;
     }
+    
     //France
     @Override
     public String printParisTouristArea(){
@@ -114,10 +114,5 @@ public class Print implements TouristArea
     public String printTrabzonTouristArea(){
         return "Tourist Area in Trabzon:\n"
                + " -Avrupali Pazari\n -Kaymakli Monastery\n -Boztepe";
-    }
-    @Override
-    public String toString()
-    {
-        return String.format(" ----------------------------------------------- \n Welcome to our program\n Country: %s\n City: %s\n hotel: %s\n car: %s\n here some Tourist area in your City:\n %s \n ----------------------------------------------- ",Country,City,Hotel,Car,ChooseACity());
     }
     }

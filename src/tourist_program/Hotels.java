@@ -1,4 +1,6 @@
-
+/*
+choose method of print Hotels
+*/
 package tourist_program;
 
 import java.util.Scanner;
@@ -13,6 +15,7 @@ public abstract class Hotels
     {
         this.city = City;
     }
+    //print hotel
     public String printcity(){
     switch (city)
     {
@@ -67,6 +70,7 @@ public abstract class Hotels
 }
     return hotel;
     }
+    
     //France
     public abstract String printParisHotel();
      public abstract String printNiceHotel();

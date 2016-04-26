@@ -1,4 +1,6 @@
-
+/*
+implementation hotels method
+*/
 package tourist_program;
 
 import java.util.Arrays;
@@ -11,6 +13,7 @@ public class SubHotels extends Hotels
         super(City);
   
     }
+    //France
     @Override
     public String printParisHotel(){
         String[][]parisHotel = {{"name","price"},{"Select Hotel","787$-1356$"},{"Elyees Union","539$-786$"},{"Doisy Etoile","1742$-3284$"}};
