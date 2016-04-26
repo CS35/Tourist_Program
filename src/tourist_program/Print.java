@@ -18,42 +18,51 @@ public class Print implements TouristArea
     switch (City)
     {
     //France
-    case "paris": 
-    case "Paris": 
+    case "paris":
+    case "Paris":
+    case "38242": 
     touristArea = printParisTouristArea();
     break;
     case "nice":
-    case "Nice": 
+    case "Nice":
+    case "95464":
     touristArea = printNiceTouristArea();
     break;
     case "lyon":
     case "Lyon": 
+    case "69006":
     touristArea = printLyonTouristArea();
     break;
     //United Kingdom
-    case "london": 
-    case "London": 
+    case "london":
+    case "London":
+    case "WC2N":
     touristArea = printLondonTouristArea();
     break;
-    case "edinburgh": 
+    case "edinburgh":
     case "Edinburgh": 
+    case "EH2":
     touristArea = printEdinburghTouristArea();
     break;
-    case "liverpool": 
+    case "liverpool":
     case "Liverpool": 
+    case "2170":
     touristArea = printLiverpoolTouristArea(); 
     break;
     //Turkey
     case "istanbul": 
     case "Istanbul": 
+    case "34000":
     touristArea = printIstanbulTouristArea();
     break;
-    case "Uuzungol":
+    case "uzungol": 
     case "Uzungol": 
+    case "62610":
     touristArea = printUzungolTouristArea();
     break;
-    case "trabzon":
+    case "trabzon": 
     case "Trabzon": 
+    case "61830":
     touristArea = printTrabzonTouristArea();
     break;     
 }
