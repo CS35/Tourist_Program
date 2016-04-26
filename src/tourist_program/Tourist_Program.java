@@ -11,9 +11,8 @@ public class Tourist_Program
       String Car,hotels;
       regions region = new regions();
       Country=region.Country();
-      City = region.City(Country);
-      
-      //print hotels
+      region.CityOrZip(Country);
+      City = region.City;
       SubHotels hotel = new SubHotels(City);
       hotels = hotel.printcity();
       
