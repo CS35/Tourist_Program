@@ -3,7 +3,6 @@ take customer information and print report
  */
 package tourist_program;
 
-//import java.util.ArrayList;
 
 public class Customar 
 {
@@ -19,7 +18,6 @@ public class Customar
         this.City = City;
         this.Country = Country;
         this.Hotel = Hotel;
-        //this.TouristArea = TouristArea;
         SubArea TouristArea = new SubArea(City);
         TouristA = TouristArea.ChooseACity();
         

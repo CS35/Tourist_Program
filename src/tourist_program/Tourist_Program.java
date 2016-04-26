@@ -2,7 +2,6 @@
 package tourist_program;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-//import java.util.Scanner;
 public class Tourist_Program
 {
 

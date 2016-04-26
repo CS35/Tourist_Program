@@ -3,14 +3,12 @@ choose method of print Hotels
 */
 package tourist_program;
 
-import java.util.Scanner;
 
 public abstract class Hotels 
 {
     String city;
     String hotel;
     String input_hotel;
-    Scanner input = new Scanner(System.in);
     public Hotels(String City)
     {
         this.city = City;
