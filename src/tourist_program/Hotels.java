@@ -20,49 +20,49 @@ public abstract class Hotels
     //France
     case "paris":
     case "Paris":
-    case "38242":
+    case "1":
     hotel = printParisHotel();
     break;
     case "nice":
     case "Nice":
-    case "95464":
+    case "2":
     hotel = printNiceHotel();
     break;
     case "lyon":
     case "Lyon": 
-    case "69006":
+    case "3":
     hotel = printLyonHotel();
     break;
     //United Kingdom
     case "london":
     case "London":
-    case "WC2N":
+    case "01":
     hotel = printLondonHotel();
     break;
     case "edinburgh":
     case "Edinburgh": 
-    case "EH2":
+    case "02":
     hotel = printEdinburghHotel();
     break;
     case "liverpool":
     case "Liverpool": 
-    case "2170":
+    case "03":
     hotel = printLiverpoolHotel(); 
     break;
     //Turkey
     case "istanbul": 
     case "Istanbul": 
-    case "34000":
+    case "001":
     hotel = printIstanbulHotel();
     break;
     case "uzungol": 
     case "Uzungol": 
-    case "62610":
+    case "002":
     hotel = printUzungolHotel();
     break;
     case "trabzon": 
     case "Trabzon": 
-    case "61830":
+    case "003":
     hotel = printTrabzonHotel();
     break;     
 }

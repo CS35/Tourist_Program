@@ -14,32 +14,40 @@ public class regions
   {
       String input_country;
       ArrayList<String> country = new ArrayList<>();//array list of country
-      country.add("France");
-      country.add("United Kingdom");
-      country.add("Turkey");
-      JOptionPane.showMessageDialog(null,"here is the list of countries for you to Choose from ...");//display message
+      country.add("(1) France");
+      country.add("(2) United Kingdom");
+      country.add("(3) Turkey");
+      JOptionPane.showMessageDialog(null,"here is the list of countries for you to Choose from ... \n \n you could enter the country name or number");//display message
       input_country = JOptionPane.showInputDialog(new JScrollPane(new JList(country.toArray())));//here custumer will choose country
+      if (!(input_country.equalsIgnoreCase("London") || input_country.equalsIgnoreCase("Edinburgh") || (input_country.equalsIgnoreCase("Liverpool"))))
+       {
+           if (!(input_country.equalsIgnoreCase("1") || input_country.equalsIgnoreCase("2") || (input_country.equalsIgnoreCase("3"))))
+           {
+           JOptionPane.showMessageDialog(null,"Sorry we don't have that city yet...");
+            System.exit(0);
+           }
+       }
       return input_country;
   }
       public void CityOrZip(String Country)//method to choose between city or zipCode
     {
         String choice;
-        choice = JOptionPane.showInputDialog(null ,"Do you want to enter a city name or a zip code ?");
+        choice = JOptionPane.showInputDialog(null ,"Do you want to enter a city name or a number ?");
             if (choice.equalsIgnoreCase("Name")||choice.equalsIgnoreCase("City")||choice.equalsIgnoreCase("City Name"))
         {
             City = City(Country);
         }
-        else if (choice.equalsIgnoreCase("Zip")||choice.equalsIgnoreCase("zip code")||choice.equalsIgnoreCase("code"))
+        else if (choice.equalsIgnoreCase("a number")||choice.equalsIgnoreCase("number")||choice.equalsIgnoreCase("num"))
         {
-            if (Country.equalsIgnoreCase("France"))
+            if (Country.equalsIgnoreCase("France")||Country.equals("1"))
             {
                 City = City(1);
             }
-            else if (Country.equalsIgnoreCase("United Kingdom"))
+            else if (Country.equalsIgnoreCase("United Kingdom")||Country.equals("2"))
             {
                 City = City(2);
             }
-            else if (Country.equalsIgnoreCase("Turkey"))
+            else if (Country.equalsIgnoreCase("Turkey")||Country.equals("3"))
             {
                 City = City(3);
             }
@@ -65,7 +73,7 @@ public class regions
     Turkey.add("Uzungol");
     Turkey.add("Trabzon");
     
-    if (Country.equalsIgnoreCase("France"))
+    if (Country.equalsIgnoreCase("France")||Country.equals("1"))
      {
        JOptionPane.showMessageDialog(null,"here is the list of cities for you to Choose from ...");
        input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(France.toArray())));
@@ -76,7 +84,7 @@ public class regions
             System.exit(0);
        }
      }
-     else if (Country.equalsIgnoreCase("United Kingdom"))
+     else if (Country.equalsIgnoreCase("United Kingdom")||Country.equals("2"))
      {
        JOptionPane.showMessageDialog(null,"here is the list of cities for you to Choose from ...");
        input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(United_Kingdom.toArray())));
@@ -87,7 +95,7 @@ public class regions
             System.exit(0);
        }
      }
-     else if (Country.equalsIgnoreCase("Turkey"))
+     else if (Country.equalsIgnoreCase("Turkey")||Country.equals("3"))
      {
        JOptionPane.showMessageDialog(null,"here is the list of cities for you to Choose from ...");
        input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(Turkey.toArray())));
@@ -100,14 +108,14 @@ public class regions
      }
      else
      {
-       JOptionPane.showMessageDialog(null,"Sorry we don't have that country yet...");
+       JOptionPane.showMessageDialog(null,"Sorry we don't have that city yet...");
        input_city = "";
        System.exit(0);
      }
       return input_city;
   }
   //polymorphism
-  public String City(int Country)//overload!! method to choose city by zipCode
+  public String City(int Country)//overload!! method to choose city by number
   { 
     String input_city;
     
@@ -115,51 +123,51 @@ public class regions
     ArrayList<String> United_Kingdom = new ArrayList<>();
     ArrayList<String> Turkey = new ArrayList<>();
 
-    France.add("38242");
-    France.add("95464");
-    France.add("69006");
+   France.add("(1)Paris");
+    France.add("(2)Nice");
+    France.add("(3)Lyon");
 
-    United_Kingdom.add("WC2N");
-    United_Kingdom.add("EH2");
-    United_Kingdom.add("2170");
+    United_Kingdom.add("(01)London");
+    United_Kingdom.add("(02)Edinburgh");
+    United_Kingdom.add("(03)Liverpool");
 
-    Turkey.add("34000");
-    Turkey.add("62610");
-    Turkey.add("61830");
+    Turkey.add("(001)Istanbul");
+    Turkey.add("(002)Uzungol");
+    Turkey.add("(003)Trabzon");
     
         switch (Country) {
             case 1:
-                JOptionPane.showMessageDialog(null,"here is the list of zip code for you to Choose from ...");
+                JOptionPane.showMessageDialog(null,"here is the list of numbers for you to Choose from ... \n \n you could only enter the number");
                 input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(France.toArray())));
                 //stop the program if the user entered unknown values
-                 if (!(input_city.equalsIgnoreCase("38242") || input_city.equalsIgnoreCase("95464") || (input_city.equalsIgnoreCase("69006"))))
+                 if (!(input_city.equalsIgnoreCase("1") || input_city.equalsIgnoreCase("2") || (input_city.equalsIgnoreCase("3"))))
        {
-           JOptionPane.showMessageDialog(null,"Sorry we don't have a city with that zip code...");
+           JOptionPane.showMessageDialog(null,"Sorry we don't have a city with that number...");
             System.exit(0);
        }
                 break;
             case 2:
-                JOptionPane.showMessageDialog(null,"here is the list of zip code for you to Choose from ...");
+                JOptionPane.showMessageDialog(null,"here is the list of numbers for you to Choose from ...");
                 input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(United_Kingdom.toArray())));
                 //stop the program if the user entered unknown values
-                if (!(input_city.equalsIgnoreCase("WC2N") || input_city.equalsIgnoreCase("EH2") || (input_city.equalsIgnoreCase("2170"))))
+                if (!(input_city.equalsIgnoreCase("01") || input_city.equalsIgnoreCase("02") || (input_city.equalsIgnoreCase("03"))))
        {
-           JOptionPane.showMessageDialog(null,"Sorry we don't have a city with that zip code...");
+           JOptionPane.showMessageDialog(null,"Sorry we don't have a city with that number...");
             System.exit(0);
        }
                 break;
             case 3:
-                JOptionPane.showMessageDialog(null,"here is the list of zip code for you to Choose from ...");
+                JOptionPane.showMessageDialog(null,"here is the list of numbers for you to Choose from ...");
                 input_city=JOptionPane.showInputDialog(new JScrollPane(new JList(Turkey.toArray())));
                 //stop the program if the user entered unknown values
-               if (!(input_city.equalsIgnoreCase("34000") || input_city.equalsIgnoreCase("62610") || (input_city.equalsIgnoreCase("61830"))))
+               if (!(input_city.equalsIgnoreCase("001") || input_city.equalsIgnoreCase("002") || (input_city.equalsIgnoreCase("003"))))
        {
-           JOptionPane.showMessageDialog(null,"Sorry we don't have a city with that zip code...");
+           JOptionPane.showMessageDialog(null,"Sorry we don't have a city with that number...");
             System.exit(0);
        }
                 break;
             default:
-                JOptionPane.showMessageDialog(null,"Sorry we don't have that country yet...");
+                JOptionPane.showMessageDialog(null,"Sorry we don't have that city yet...");
                 input_city = "";
                 System.exit(0);
         }

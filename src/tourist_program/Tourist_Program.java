@@ -16,7 +16,17 @@ public class Tourist_Program
       do
               {
       name = JOptionPane.showInputDialog(null,"Please enter your name");
+      if ("".equals(name))
+           {
+           JOptionPane.showMessageDialog(null,"You Did not enter a name");
+            System.exit(0);
+           }
       ID = JOptionPane.showInputDialog(null,"Please enter your ID");
+      if ("".equals(ID))
+           {
+           JOptionPane.showMessageDialog(null,"You Did not enter your ID");
+            System.exit(0);
+           }
       //print country and city
       regions region = new regions();
       Country=region.Country();
