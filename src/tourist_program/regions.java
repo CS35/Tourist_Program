@@ -19,7 +19,7 @@ public class regions
       country.add("(3) Turkey");
       JOptionPane.showMessageDialog(null,"here is the list of countries for you to Choose from ... \n \n you could enter the country name or number");//display message
       input_country = JOptionPane.showInputDialog(new JScrollPane(new JList(country.toArray())));//here custumer will choose country
-      if (!(input_country.equalsIgnoreCase("London") || input_country.equalsIgnoreCase("Edinburgh") || (input_country.equalsIgnoreCase("Liverpool"))))
+      if (!(input_country.equalsIgnoreCase("France") || input_country.equalsIgnoreCase("United Kingdom") || (input_country.equalsIgnoreCase("Turkey"))))
        {
            if (!(input_country.equalsIgnoreCase("1") || input_country.equalsIgnoreCase("2") || (input_country.equalsIgnoreCase("3"))))
            {
